@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Public API demo for my portfolio with a static web page for frontend." />
+    <meta name="keywords" content="Web development, backend, frontend" />
+
+    <title>Public API Docs</title>
+
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link 
+      rel="stylesheet" 
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" 
+      crossorigin="anonymous"
+    />
+
+  </head>
+
+  <!-- ontouchstart simulates hover effects in mobile devices with touch screens -->
+  <body ontouchstart="">
+    
+    <header class="container">
+      <div class="navbar-mobile-header-top">
+        <a routerLink="/" class="navbar-logo">publicapi<span class="logo-span">demo</span></a>
+        <div class="navbar-collapse-button"><i class="fas fa-bars"></i></div>
+      </div>
+      <nav class="navbar-nav">
+        <ul class="navbar-list">
+          <li class="navbar-list-item"><a href="/">home</a></li>
+          <li class="navbar-list-item"><a href="./api.html">api</a></li>
+          <li class="navbar-list-item"><a href="./docs.html">docs</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-container">
+
+      <h1 class="readme-h1">
+        Public API Demo (NodeJS + Express) & 
+        Static Page for Frontend (HTML5 + CSS3)
+      </h1>
+
+      <h2 class="readme-h2">
+        <a href="https://public-api-demo.herokuapp.com">Live Demo</a>
+      </h2>
+
+
+      <h2 class="readme-h2">A quick walkthrough</h2>
+
+      <p>
+          I wrote the public API with NodeJS by using Express framework. 
+          It is connected to a MongoDB database that is on mLab right now, 
+          but if you want to use a local mongoDB, adress can be uncommented from 
+          `index.js` to switch databases.
+        <br />
+          Public API is also serving to two other applications that I have created 
+          for my frontend demo applications, one React and one Angular version of the same app.
+        <br />
+          I have wrote the static pages with HTML5 and CSS3 as requested. 
+          I tried to use all new introductions to them at least once. 
+          I tried to avoid external libraries as much as possible. Only two 
+          elements I've imported from external libraries are a Google Font 
+          and, a few Font-Awesome icons. Also, all design is based on CSS3 flexboxes.
+      </p>
+
+
+      <h1 class="readme-h1">Installation</h1>
+
+      <p>
+        I have used NodeJS version <code>v10.15.0</code> for coding the backend.
+      </p>
+      <p>
+        After cloning solution repo to your computer, first run
+      </p>  
+      <code>npm install</code>
+      <p>
+        Then you should be able to run it via command
+      </p>
+      <code>node index.js</code>
+      <p>
+          Unless an environmental PORT variable is set, server hosts 
+          itself on port 8000 by default. You can click 
+          <a href="http://localhost:8000/">here</a> to access it. 
+      </p>
+    </main>
+
+    <footer class="footer">
+      <p class="footer-text">Created by Gunes Aydin</p>
+      <ul class="footer-links">
+        <li><a href="http://www.gunesa.com" target="_blank"><i class="fas fa-sun"></i></a></li>
+        <li><a href="https://github.com/gunesaydin" target="_blank"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://twitter.com/gunesaydin" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/gunes-aydin/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
